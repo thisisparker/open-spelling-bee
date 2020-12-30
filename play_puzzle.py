@@ -159,7 +159,7 @@ def ask_user():
 def help(msg, letters, guess_list, player_score, player_words, player_pangram, total_score, word_count):
     
     # some features for
-    clean_msg = msg.replace('!','')[0].lower()
+    clean_msg = msg.replace('!','')[0].lower() if msg.replace('!','') else ''
 
     if clean_msg == 'q':
         print('Quitting...')
